@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/anim/design_fab_in.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/anim/design_snackbar_in.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/anim/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/anim/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/anim/abc_fade_in.xml"
+    }
+]

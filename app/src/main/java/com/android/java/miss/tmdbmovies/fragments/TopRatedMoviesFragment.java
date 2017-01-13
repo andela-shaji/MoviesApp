@@ -9,62 +9,75 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import com.android.java.miss.tmdbmovies.MoviesApp;
 import com.android.java.miss.tmdbmovies.R;
 import com.android.java.miss.tmdbmovies.adapters.MoviesAdapter;
 import com.android.java.miss.tmdbmovies.model.Movie;
 import com.android.java.miss.tmdbmovies.model.MovieResponse;
-import com.android.java.miss.tmdbmovies.network.ApiClient;
 import com.android.java.miss.tmdbmovies.network.ApiManager;
-
+import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import javax.inject.Inject;
+import rx.Observable;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.subscriptions.CompositeSubscription;
 
 import static com.android.java.miss.tmdbmovies.utils.Constants.API_KEY;
 import static com.makeramen.roundedimageview.RoundedDrawable.TAG;
 
-
 public class TopRatedMoviesFragment extends Fragment {
 
-  public TopRatedMoviesFragment() {
+    CompositeSubscription compositeSubscription = new CompositeSubscription();
 
-  }
+    @Inject ApiManager apiManager;
+    @Inject Picasso picasso;
 
-  @Override
-  public void onCreate(@Nullable Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-  }
+    public TopRatedMoviesFragment() {
 
-  @Nullable
-  @Override
-  public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-    View view = inflater.inflate(R.layout.top_rated_movies_fragment, container, false);
-    final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.movies_recycler_view);
-    recyclerView.setHasFixedSize(true);
+    }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
 
-      recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+        @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.top_rated_movies_fragment, container, false);
 
+        ((MoviesApp) getContext().getApplicationContext()).getAppComponent().inject(this);
 
+        final RecyclerView recyclerView =
+            (RecyclerView) view.findViewById(R.id.movies_recycler_view);
+        recyclerView.setHasFixedSize(true);
 
-    ApiManager apiService = ApiClient.getClient().create(ApiManager.class);
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
-    Call<MovieResponse> call = apiService.getTopRatedMovies(API_KEY);
-    call.enqueue(new Callback<MovieResponse>() {
-      @Override
-      public void onResponse(Call<MovieResponse> call, Response<MovieResponse> response) {
-        ArrayList<Movie> movies = response.body().getResults();
-        recyclerView.setAdapter(new MoviesAdapter(movies, R.layout.movie_list_item, getContext()));
-      }
+        Observable<MovieResponse> movieObservable = apiManager.getTopRatedMovies(API_KEY);
+        compositeSubscription.add(movieObservable.observeOn(AndroidSchedulers.mainThread())
+            .subscribe(new Action1<MovieResponse>() {
+            @Override
+            public void call(MovieResponse movieResponse) {
+                ArrayList<Movie> movies = movieResponse.getResults();
+                recyclerView.setAdapter(
+                    new MoviesAdapter(movies, R.layout.movie_list_item, getContext(), picasso));
+            }
+        }, new Action1<Throwable>() {
+            @Override
+            public void call(Throwable throwable) {
+                Log.e(TAG, throwable.toString());
+            }
+        }));
 
-      @Override
-      public void onFailure(Call<MovieResponse> call, Throwable t) {
-        Log.e(TAG, t.toString());
-      }
-    });
-    return view;
-  }
+        return view;
+    }
+
+    @Override
+    public void onDestroy() {
+        compositeSubscription.unsubscribe();
+        super.onDestroy();
+    }
 }

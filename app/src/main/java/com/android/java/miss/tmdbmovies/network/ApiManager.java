@@ -5,6 +5,7 @@ import com.android.java.miss.tmdbmovies.model.MovieResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
+import rx.Observable;
 
 /**
  * Created by suadahaji.
@@ -13,5 +14,5 @@ import retrofit2.http.Query;
 public interface ApiManager {
 
   @GET("movie/top_rated")
-  Call<MovieResponse> getTopRatedMovies(@Query("api_key") String apiKey);
+  Observable<MovieResponse> getTopRatedMovies(@Query("api_key") String apiKey);
 }

@@ -2,10 +2,7 @@ package com.android.java.miss.tmdbmovies.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * Created by suadahaji.
@@ -88,17 +85,6 @@ public class Movie {
   }
 
   public String getReleaseDate() {
-    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-    Date date = null;
-    SimpleDateFormat formatted = new SimpleDateFormat("yyyy");
-
-    try {
-      date = format.parse(releaseDate);
-    } catch (ParseException e) {
-      e.printStackTrace();
-    }
-
-    releaseDate = formatted.format(date);
     return releaseDate;
   }
 

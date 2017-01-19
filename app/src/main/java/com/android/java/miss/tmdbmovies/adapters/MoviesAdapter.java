@@ -63,7 +63,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
       holder.movieTitle.setText(movies.get(position).getTitle());
       holder.date.setText(movies.get(position).getReleaseDate());
       holder.rating.setText(Double.toString(movies.get(position).getVoteAverage()));
-      picasso.load("http://image.tmdb.org/t/p/w500/" + movies.get(position).getPosterPath()).into(holder.moviePoster);
+      picasso.load("http://image.tmdb.org/t/p/w342/" + movies.get(position).getPosterPath()).into(holder.moviePoster);
   }
 
   @Override

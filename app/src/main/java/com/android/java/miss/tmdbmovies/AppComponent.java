@@ -4,6 +4,7 @@ import com.android.java.miss.tmdbmovies.fragments.NowPlayingMoviesFragment;
 import com.android.java.miss.tmdbmovies.fragments.PopularMoviesFragment;
 import com.android.java.miss.tmdbmovies.fragments.TopRatedMoviesFragment;
 import com.android.java.miss.tmdbmovies.fragments.UpcomingMoviesFragment;
+import com.android.java.miss.tmdbmovies.movies.upcoming.UpcomingMoviesView;
 import com.android.java.miss.tmdbmovies.network.NetworkModule;
 
 import javax.inject.Singleton;
@@ -26,6 +27,7 @@ public interface AppComponent {
 
   void inject(NowPlayingMoviesFragment nowPlayingMoviesFragment);
 
+  void inject(UpcomingMoviesView upcomingMoviesView);
 
   // Helper class
   final class Initializer {

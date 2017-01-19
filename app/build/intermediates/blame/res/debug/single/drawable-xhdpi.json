@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-xhdpi/star.png",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/generated/res/pngs/debug/drawable-xhdpi/star.png"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-xhdpi/bg_overlay.png",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/src/main/res/drawable-xhdpi/bg_overlay.png"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-xhdpi/button_bg.png",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/generated/res/pngs/debug/drawable-xhdpi/button_bg.png"
+    }
+]

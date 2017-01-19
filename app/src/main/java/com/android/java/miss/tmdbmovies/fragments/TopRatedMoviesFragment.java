@@ -53,7 +53,7 @@ public class TopRatedMoviesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ((MoviesApp) getContext().getApplicationContext()).getAppComponent().inject(this);
 
-        View view = inflater.inflate(R.layout.top_rated_movies_fragment, container, false);
+        View view = inflater.inflate(R.layout.top_rated_movies, container, false);
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.movies_recycler_view);
         recyclerView.setHasFixedSize(true);
 

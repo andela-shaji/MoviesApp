@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/star.xml",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/star.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/m.cheikhna/.android/build-cache/ae5be2a5f69a647cd7d1c5efaaf2c1c380a6ab59/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/button_bg.xml",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/generated/res/pngs/debug/drawable-anydpi-v21/button_bg.xml"
+    }
+]

@@ -31,7 +31,7 @@ import static com.android.java.miss.tmdbmovies.utils.Constants.API_KEY;
 import static com.makeramen.roundedimageview.RoundedDrawable.TAG;
 
 
-public class TopRatedMoviesFragment extends Fragment {
+public class PopularMoviesFragment extends Fragment {
     CompositeSubscription compositeSubscription = new CompositeSubscription();
     @Inject
     ApiManager apiManager;
@@ -39,7 +39,7 @@ public class TopRatedMoviesFragment extends Fragment {
     @Inject
     Picasso picasso;
 
-    public TopRatedMoviesFragment() {
+    public PopularMoviesFragment() {
 
     }
 
@@ -62,7 +62,7 @@ public class TopRatedMoviesFragment extends Fragment {
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
 
-        final Observable<MovieResponse> movieObservable = apiManager.getTopRatedMovies(API_KEY);
+        final Observable<MovieResponse> movieObservable = apiManager.getPopularMovies(API_KEY);
         compositeSubscription.add(movieObservable.observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Action1<MovieResponse>() {
                     @Override

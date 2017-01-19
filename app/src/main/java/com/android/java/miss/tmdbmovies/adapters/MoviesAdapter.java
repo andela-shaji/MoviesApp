@@ -23,6 +23,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
   private ArrayList<Movie> movies;
   private int rowLayout;
   private static Context context;
+  private Picasso picasso;
   private static final String TAG = MoviesAdapter.class.getSimpleName();
 
   public static class MovieViewHolder extends RecyclerView.ViewHolder {
@@ -42,10 +43,11 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
     }
   }
 
-  public MoviesAdapter(ArrayList<Movie> movies, int rowLayout, Context context) {
+  public MoviesAdapter(ArrayList<Movie> movies, int rowLayout, Context context, Picasso picasso) {
     this.movies = movies;
     this.rowLayout = rowLayout;
     this.context = context;
+    this.picasso = picasso;
   }
 
   @Override
@@ -61,7 +63,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MovieViewH
       holder.movieTitle.setText(movies.get(position).getTitle());
       holder.date.setText(movies.get(position).getReleaseDate());
       holder.rating.setText(Double.toString(movies.get(position).getVoteAverage()));
-      Picasso.with(context).load("http://image.tmdb.org/t/p/original/" + movies.get(position).getPosterPath()).into(holder.moviePoster);
+      picasso.load("http://image.tmdb.org/t/p/w500/" + movies.get(position).getPosterPath()).into(holder.moviePoster);
   }
 
   @Override

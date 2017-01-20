@@ -2806,7 +2806,7 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0d0063;
         public static final int action_mode_close_button=0x7f0d0046;
         public static final int action_text=0x7f0d008e;
-        public static final int actions=0x7f0d009c;
+        public static final int actions=0x7f0d009b;
         public static final int activity_chooser_view_content=0x7f0d0047;
         public static final int add=0x7f0d001e;
         public static final int alertTitle=0x7f0d005b;
@@ -2838,10 +2838,12 @@ containing a value of this type.
         public static final int design_navigation_view=0x7f0d0081;
         public static final int disableHome=0x7f0d0012;
         public static final int edit_query=0x7f0d0069;
+        public static final int empty_state=0x7f0d00a5;
         public static final int end=0x7f0d002a;
         public static final int end_padder=0x7f0d00a2;
         public static final int enterAlways=0x7f0d0019;
         public static final int enterAlwaysCollapsed=0x7f0d001a;
+        public static final int error_state=0x7f0d00a4;
         public static final int exitUntilCollapsed=0x7f0d001b;
         public static final int expand_activities_button=0x7f0d0048;
         public static final int expanded_menu=0x7f0d005d;
@@ -2852,7 +2854,7 @@ containing a value of this type.
         public static final int home=0x7f0d0004;
         public static final int homeAsUp=0x7f0d0013;
         public static final int icon=0x7f0d004c;
-        public static final int icon_group=0x7f0d009d;
+        public static final int icon_group=0x7f0d009c;
         public static final int ifRoom=0x7f0d003c;
         public static final int image=0x7f0d0049;
         public static final int info=0x7f0d0099;
@@ -2865,7 +2867,7 @@ containing a value of this type.
         public static final int listMode=0x7f0d000f;
         public static final int list_item=0x7f0d004b;
         public static final int main_layout=0x7f0d0076;
-        public static final int masked=0x7f0d00a5;
+        public static final int masked=0x7f0d00a8;
         public static final int media_actions=0x7f0d0092;
         public static final int middle=0x7f0d0039;
         public static final int mini=0x7f0d0037;
@@ -2879,7 +2881,7 @@ containing a value of this type.
         public static final int never=0x7f0d003d;
         public static final int none=0x7f0d0014;
         public static final int normal=0x7f0d0010;
-        public static final int notification_background=0x7f0d009b;
+        public static final int notification_background=0x7f0d009a;
         public static final int notification_main_column=0x7f0d0095;
         public static final int notification_main_column_container=0x7f0d0094;
         public static final int parallax=0x7f0d0030;
@@ -2892,7 +2894,7 @@ containing a value of this type.
         public static final int rating_image=0x7f0d008a;
         public static final int repeat=0x7f0d0041;
         public static final int right=0x7f0d002d;
-        public static final int right_icon=0x7f0d009a;
+        public static final int right_icon=0x7f0d009d;
         public static final int right_side=0x7f0d0096;
         public static final int screen=0x7f0d0020;
         public static final int scroll=0x7f0d001c;
@@ -2948,10 +2950,11 @@ containing a value of this type.
         public static final int transition_current_scene=0x7f0d000b;
         public static final int transition_scene_layoutid_cache=0x7f0d000c;
         public static final int up=0x7f0d000d;
+        public static final int upcoming_view=0x7f0d00a6;
         public static final int useLogo=0x7f0d0018;
         public static final int view_offset_helper=0x7f0d000e;
         public static final int viewpager=0x7f0d0079;
-        public static final int visible=0x7f0d00a4;
+        public static final int visible=0x7f0d00a7;
         public static final int withText=0x7f0d003e;
         public static final int wrap_content=0x7f0d0024;
     }
@@ -3029,7 +3032,8 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f04003b;
         public static final int select_dialog_singlechoice_material=0x7f04003c;
         public static final int support_simple_spinner_dropdown_item=0x7f04003d;
-        public static final int top_rated_movies =0x7f04003e;
+        public static final int top_rated_movies=0x7f04003e;
+        public static final int upcoming_fragment=0x7f04003f;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -3071,20 +3075,22 @@ containing a value of this type.
         public static final int bottom_sheet_behavior=0x7f070023;
         public static final int character_counter_pattern=0x7f070024;
         public static final int define_roundedimageview=0x7f070025;
-        public static final int library_roundedimageview_author=0x7f070026;
-        public static final int library_roundedimageview_authorWebsite=0x7f070027;
-        public static final int library_roundedimageview_isOpenSource=0x7f070028;
-        public static final int library_roundedimageview_libraryDescription=0x7f070029;
-        public static final int library_roundedimageview_libraryName=0x7f07002a;
-        public static final int library_roundedimageview_libraryVersion=0x7f07002b;
-        public static final int library_roundedimageview_libraryWebsite=0x7f07002c;
-        public static final int library_roundedimageview_licenseId=0x7f07002d;
-        public static final int library_roundedimageview_repositoryLink=0x7f07002e;
-        public static final int password_toggle_content_description=0x7f07002f;
-        public static final int path_password_eye=0x7f070030;
-        public static final int path_password_eye_mask_strike_through=0x7f070031;
-        public static final int path_password_eye_mask_visible=0x7f070032;
-        public static final int path_password_strike_through=0x7f070033;
+        public static final int fetch_error=0x7f070026;
+        public static final int library_roundedimageview_author=0x7f070027;
+        public static final int library_roundedimageview_authorWebsite=0x7f070028;
+        public static final int library_roundedimageview_isOpenSource=0x7f070029;
+        public static final int library_roundedimageview_libraryDescription=0x7f07002a;
+        public static final int library_roundedimageview_libraryName=0x7f07002b;
+        public static final int library_roundedimageview_libraryVersion=0x7f07002c;
+        public static final int library_roundedimageview_libraryWebsite=0x7f07002d;
+        public static final int library_roundedimageview_licenseId=0x7f07002e;
+        public static final int library_roundedimageview_repositoryLink=0x7f07002f;
+        public static final int movies_empty_state=0x7f070030;
+        public static final int password_toggle_content_description=0x7f070031;
+        public static final int path_password_eye=0x7f070032;
+        public static final int path_password_eye_mask_strike_through=0x7f070033;
+        public static final int path_password_eye_mask_visible=0x7f070034;
+        public static final int path_password_strike_through=0x7f070035;
         public static final int search_menu_title=0x7f070013;
         public static final int status_bar_notification_info_overflow=0x7f070014;
     }

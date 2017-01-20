@@ -3,6 +3,7 @@ package com.android.java.miss.tmdbmovies.movies.upcoming;
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -14,7 +15,6 @@ import com.android.java.miss.tmdbmovies.network.ApiManager;
 import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import javax.inject.Inject;
-import rx.subscriptions.CompositeSubscription;
 
 public class UpcomingMoviesView extends RelativeLayout implements UpcomingScreen {
 
@@ -22,10 +22,13 @@ public class UpcomingMoviesView extends RelativeLayout implements UpcomingScreen
 
     @Inject Picasso picasso;
 
-    CompositeSubscription compositeSubscription = new CompositeSubscription();
     private final RecyclerView recyclerView;
 
     UpcomingMoviesPresenter presenter;
+
+    public UpcomingMoviesView(Context context, AttributeSet attrs) {
+        this(context);
+    }
 
     public UpcomingMoviesView(Context context) {
         super(context);
@@ -39,19 +42,29 @@ public class UpcomingMoviesView extends RelativeLayout implements UpcomingScreen
 
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
-        presenter = new UpcomingMoviesPresenter(apiManager, picasso, this);
-        presenter.fetch();
+        presenter = new UpcomingMoviesPresenter(apiManager, this);
+        presenter.fetchMovies();
     }
 
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        compositeSubscription.unsubscribe();
+        presenter.unbind();
     }
 
     @Override
     public void onMoviesResponse(ArrayList<Movie> movies) {
         recyclerView.setAdapter(
             new MoviesAdapter(movies, R.layout.movie_list_item, getContext(), picasso));
+    }
+
+    @Override
+    public void displayErrorState() {
+        findViewById(R.id.error_state).setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void displayEmptyState() {
+        findViewById(R.id.empty_state).setVisibility(View.VISIBLE);
     }
 }

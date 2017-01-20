@@ -5,4 +5,7 @@ import java.util.ArrayList;
 
 public interface UpcomingScreen {
     void onMoviesResponse(ArrayList<Movie> movies);
+    void displayErrorState();
+
+    void displayEmptyState();
 }

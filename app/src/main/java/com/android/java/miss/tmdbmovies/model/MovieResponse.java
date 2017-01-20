@@ -18,6 +18,13 @@ public class MovieResponse {
   @SerializedName("total_pages")
   private int totalPages;
 
+  public MovieResponse(int page, ArrayList<Movie> results, int totalResults, int totalPages) {
+    this.page = page;
+    this.results = results;
+    this.totalResults = totalResults;
+    this.totalPages = totalPages;
+  }
+
   public int getPage() {
     return page;
   }

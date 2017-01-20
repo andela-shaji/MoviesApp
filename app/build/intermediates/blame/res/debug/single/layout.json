@@ -8,8 +8,8 @@
         "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/layout/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/layout/top_rated_movies_fragment.xml",
-        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/src/main/res/layout/top_rated_movies_fragment.xml"
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/layout/upcoming_fragment.xml",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/src/main/res/layout/upcoming_fragment.xml"
     },
     {
         "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
@@ -26,6 +26,10 @@
     {
         "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
         "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/layout/top_rated_movies.xml",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/src/main/res/layout/top_rated_movies.xml"
     },
     {
         "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",

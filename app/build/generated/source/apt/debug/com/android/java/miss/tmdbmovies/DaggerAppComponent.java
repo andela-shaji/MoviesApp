@@ -9,7 +9,8 @@ import com.android.java.miss.tmdbmovies.fragments.PopularMoviesFragment_MembersI
 import com.android.java.miss.tmdbmovies.fragments.TopRatedMoviesFragment;
 import com.android.java.miss.tmdbmovies.fragments.TopRatedMoviesFragment_MembersInjector;
 import com.android.java.miss.tmdbmovies.fragments.UpcomingMoviesFragment;
-import com.android.java.miss.tmdbmovies.fragments.UpcomingMoviesFragment_MembersInjector;
+import com.android.java.miss.tmdbmovies.movies.upcoming.UpcomingMoviesView;
+import com.android.java.miss.tmdbmovies.movies.upcoming.UpcomingMoviesView_MembersInjector;
 import com.android.java.miss.tmdbmovies.network.ApiManager;
 import com.android.java.miss.tmdbmovies.network.NetworkModule;
 import com.android.java.miss.tmdbmovies.network.NetworkModule_ProvideApiKeyFactory;
@@ -45,9 +46,9 @@ public final class DaggerAppComponent implements AppComponent {
 
   private MembersInjector<PopularMoviesFragment> popularMoviesFragmentMembersInjector;
 
-  private MembersInjector<UpcomingMoviesFragment> upcomingMoviesFragmentMembersInjector;
-
   private MembersInjector<NowPlayingMoviesFragment> nowPlayingMoviesFragmentMembersInjector;
+
+  private MembersInjector<UpcomingMoviesView> upcomingMoviesViewMembersInjector;
 
   private DaggerAppComponent(Builder builder) {
     assert builder != null;
@@ -95,12 +96,12 @@ public final class DaggerAppComponent implements AppComponent {
         PopularMoviesFragment_MembersInjector.create(
             provideApiServiceProvider, providePicassoProvider);
 
-    this.upcomingMoviesFragmentMembersInjector =
-        UpcomingMoviesFragment_MembersInjector.create(
-            provideApiServiceProvider, providePicassoProvider);
-
     this.nowPlayingMoviesFragmentMembersInjector =
         NowPlayingMoviesFragment_MembersInjector.create(
+            provideApiServiceProvider, providePicassoProvider);
+
+    this.upcomingMoviesViewMembersInjector =
+        UpcomingMoviesView_MembersInjector.create(
             provideApiServiceProvider, providePicassoProvider);
   }
 
@@ -126,12 +127,17 @@ public final class DaggerAppComponent implements AppComponent {
 
   @Override
   public void inject(UpcomingMoviesFragment upcomingMoviesFragment) {
-    upcomingMoviesFragmentMembersInjector.injectMembers(upcomingMoviesFragment);
+    MembersInjectors.<UpcomingMoviesFragment>noOp().injectMembers(upcomingMoviesFragment);
   }
 
   @Override
   public void inject(NowPlayingMoviesFragment nowPlayingMoviesFragment) {
     nowPlayingMoviesFragmentMembersInjector.injectMembers(nowPlayingMoviesFragment);
+  }
+
+  @Override
+  public void inject(UpcomingMoviesView upcomingMoviesView) {
+    upcomingMoviesViewMembersInjector.injectMembers(upcomingMoviesView);
   }
 
   public static final class Builder {

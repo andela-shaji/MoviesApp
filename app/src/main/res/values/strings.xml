@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TMDB Movies</string>
+  <string name="fetch_error">Couldn\'t load movies.</string>
+  <string name="movies_empty_state">No movies.</string>
 </resources>

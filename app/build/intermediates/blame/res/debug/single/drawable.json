@@ -178,5 +178,13 @@
     {
         "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/Users/m.cheikhna/.android/build-cache/32fdf0cd9dffa6b9ed19d8b7f979f1d961342071/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable/star.xml",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/src/main/res/drawable/star.xml"
+    },
+    {
+        "merged": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/build/intermediates/res/merged/debug/drawable/button_bg.xml",
+        "source": "/Users/m.cheikhna/Documents/repos/others/android-repos/MoviesApp/app/src/main/res/drawable/button_bg.xml"
     }
 ]
